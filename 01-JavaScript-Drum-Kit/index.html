@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+        }
+
+        .all {
+            background-image: url("drum.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .all h1 {
+            margin-top: 0;
+            padding-top: 0;
+            color: white;
+            background-color: black;
+            padding: 10px 15px;
+        }
+
+        .all .keys {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .all .key {
+            border: 2px solid rgb(208, 0, 0);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.607);
+            color: white;
+            width: 75px;
+            height: 75px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="all">
+        <h1>Keyboard Drum</h1>
+        <div class="keys">
+            <div data-key="j" class="key">
+                <span>J</span>
+                <small>Snare</small>
+            </div>
+            <div data-key="b" class="key">
+                <span>B</span>
+                <small>Kick</small>
+            </div>
+            <div data-key="v" class="key">
+                <span>V</span>
+                <small>Kick</small>
+            </div>
+            <div data-key="h" class="key">
+                <span>H</span>
+                <small>Tom High</small>
+            </div>
+            <div data-key="g" class="key">
+                <span>G</span>
+                <small>Tom Mid</small>
+            </div>
+            <div data-key="f" class="key">
+                <span>F</span>
+                <small>Tom Low</small>
+            </div>
+            <div data-key="e" class="key">
+                <span>E</span>
+                <small>Crash</small>
+            </div>
+            <div data-key="r" class="key">
+                <span>R</span>
+                <small>Ride</small>
+            </div>
+            <div data-key="i" class="key">
+                <span>İ</span>
+                <small>Hi-hat Open</small>
+            </div>
+            <div data-key="K" class="key">
+                <span>K</span>
+                <small>Hi-hat Close</small>
+            </div>
+        </div>
+    </div>
+
+
+    <audio data-key="j"
+        src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/snare.wav"></audio>
+    <audio data-key="b"
+        src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
+    <audio data-key="v"
+        src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
+    <audio data-key="h"
+        src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-high.wav"></audio>
+    <audio data-key="g"
+        src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-mid.wav"></audio>
+    <audio data-key="f"
+        src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-low.wav"></audio>
+    <audio data-key="e"
+        src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/crash.wav"></audio>
+    <audio data-key="r"
+        src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/ride.wav"></audio>
+    <audio data-key="i"
+        src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-open.wav"></audio>
+    <audio data-key="K"
+        src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-close.wav"></audio>
+
+    <script src="./main.min.js"></script>
+</body>
+
+</html>
